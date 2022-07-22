@@ -1,0 +1,11 @@
+vpc_id              = "vpc-06bac30898b418e05"
+Instance_type       = "t2.micro"
+minsize             = 1
+maxsize             = 2
+#security_groups     = "sg-07b7ab8036f6a8072"
+#public_subnets      = ["192.168.10.0"] # Service Subnet
+public_subnets     = ["subnet-0fa682f9a3421fecb", "subnet-09276eb5e0fab2684"] # Service Subnet
+elb_public_subnets = ["subnet-0fa682f9a3421fecb", "subnet-09276eb5e0fab2684"] # ELB Subnet
+tier = "WebServer"
+solution_stack_name= "64bit Amazon Linux 2 v3.4.17 running Docker"
+#dashboard-instanceID = "${aws_elastic_beanstalk_environment.beanstalkappenv.arn}"
